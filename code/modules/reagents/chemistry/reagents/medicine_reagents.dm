@@ -176,7 +176,8 @@
 		M.adjustCloneLoss(-power, 0)
 		for(var/organ in M.internal_organs)
 			var/obj/item/organ/O = organ
-			O.applyOrganDamage(-0.5 * power, 0)
+			if (!(O.organ_flags & ORGAN_FAILING))
+				O.applyOrganDamage(-1 * power)
 		for(var/i in M.all_wounds)
 			var/datum/wound/iter_wound = i
 			iter_wound.on_xadone(power)
