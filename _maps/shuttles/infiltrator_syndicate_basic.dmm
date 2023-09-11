@@ -445,9 +445,9 @@
 	dwidth = 12;
 	height = 17;
 	hidden = 1;
-	id = "syndicate";
+	id = "real_syndicate";
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
-	name = "syndicate infiltrator";
+	name = "Syndicate Infiltrator";
 	port_direction = 4;
 	width = 23
 	},
